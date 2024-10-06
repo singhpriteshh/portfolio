@@ -1,7 +1,8 @@
 import { FaNodeJs } from "react-icons/fa";
 import { RiReactjsLine } from "react-icons/ri";
-import { SiCss3, SiExpress, SiHtml5, SiMongodb, SiTailwindcss } from "react-icons/si";
+import { SiBootstrap, SiC, SiCss3, SiExpress, SiHtml5, SiJavascript, SiMongodb, SiPython, SiTailwindcss } from "react-icons/si";
 import { motion } from "framer-motion";
+import { FaJava } from "react-icons/fa6";
 
 const iconVariable = (duration) => ({
     initial: { y: -10 },
@@ -29,6 +30,13 @@ function Technologies() {
                 initial={{ x: 100, opacity: 0 }}
                 transition={{ duration: 1.5 }}
                 className="flex flex-wrap items-center justify-center gap-4">
+                <motion.div
+                    variants={iconVariable(5.5)}
+                    initial="initial"
+                    animate="animate"
+                    className="rounded-2xl border-4 border-neutral-800 p-4">
+                    <SiJavascript className="text-7xl text-yellow-500" />
+                </motion.div>
                 <motion.div
                     variants={iconVariable(2.5)}
                     initial="initial"
@@ -77,6 +85,34 @@ function Technologies() {
                     animate="animate"
                     className="rounded-2xl border-4 border-neutral-800 p-4">
                     <SiTailwindcss className="text-7xl text-blue-700" />
+                </motion.div>
+                <motion.div
+                    variants={iconVariable(5.5)}
+                    initial="initial"
+                    animate="animate"
+                    className="rounded-2xl border-4 border-neutral-800 p-4">
+                    <SiBootstrap className="text-7xl text-purple-700" />
+                </motion.div>
+                <motion.div
+                    variants={iconVariable(5.5)}
+                    initial="initial"
+                    animate="animate"
+                    className="rounded-2xl border-4 border-neutral-800 p-4">
+                    <SiC className="text-7xl" />
+                </motion.div>
+                <motion.div
+                    variants={iconVariable(5.5)}
+                    initial="initial"
+                    animate="animate"
+                    className="rounded-2xl border-4 border-neutral-800 p-4">
+                    <FaJava className="text-7xl" />
+                </motion.div>
+                <motion.div
+                    variants={iconVariable(5.5)}
+                    initial="initial"
+                    animate="animate"
+                    className="rounded-2xl border-4 border-neutral-800 p-4">
+                    <SiPython className="text-7xl" />
                 </motion.div>
             </motion.div>
         </div >
