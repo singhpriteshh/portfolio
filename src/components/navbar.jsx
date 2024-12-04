@@ -9,7 +9,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 function Navbar() {
   return (
-    <nav className="flex mb-20 items-center justify-between py-6 fixed top-0 left-0 w-full px-10 z-50">
+    <nav className="flex items-center justify-between py-5 fixed top-0 left-0 w-full px-10 z-50 bg-black shadow-20 rounded-md shadow-lg">
       <div className="flex flex-shrink-0 items-center">
         <h2 className="mx-2 text-4xl font-thin">PS</h2>
         {/* <img className="mx-2 w-10" src={logo} alt="logo" /> */}
